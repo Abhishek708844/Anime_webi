@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="animMeApp" >
+
+<head>
+ <link rel="stylesheet" href="/style.css">
+<title>Animesuge</title>
+</head>
+<body >
+    <video autoplay muted loop>
+        <source src="backvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header >
+        <nav>
+            <div class="container">
+                <img class="logo" src="https://ih1.redbubble.net/image.667073572.5388/aps,504x498,small,transparent-pad,600x600,f8f8f8.u4.jpg" alt="logo">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="turn" href="#Anime_list">Anime List</a></li>
+                    <li><a class="animemovie" href="#Anime_movie">Anime Movie</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-container">
+        <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search anime..." >
+                <button ng-click="searchAnime()">Search</button>
+            </div>
+        </div>
+        </header>
+   
+    
+    
+    <main>
+        <div class="container">
+            <div class="main-content">
+                
+                <aside>
+                    <div class="aside">
+                        <div class="top-anime">
+                            <h1>Top 3 Anime list</h1>
+                        </div>
+                        <div class="peace">
+                            <div class="top">
+                                <img src="fullmetal.jpeg" width="120px" alt="" onclick="openVideo7()" >
+                                <div class="desc-aside">
+                                    <h3>Fullmetal Alchemist: Brotherhood</h3>
+                                    <div class="rating">
+                                        <p> Rating: 9.5/10
+                                        </p>
+                                    </div>
+                                    <div class="desc-bottom">
+                                        <p>Episdoe : 1-64 End</p>
+                                        <p>Mangaka : Hiromu Arakawa </p>
+                                        <p>Relase on : 2009 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="peace">
+                            <div class="top">
+                                <img src="hunterxhunter.jpg" width="120px" alt="" onclick="openVideo8()" >
+                                <div class="desc-aside">
+                                    <h3>Hunter x Hunter</h3>
+                                    <div class="rating">
+                                        <p> Rating: 9.1/10
+                                        </p>
+                                    </div>
+                                    <div class="desc-bottom">
+                                        <p>Episdoe : 1-148 End</p>
+                                        <p>Mangaka : Yoshihiro Togashi </p>
+                                        <p>Relase on : 2011 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="peace">
+                            <div class="top">
+                                <img src="death-note-hd-.webp" width="120px" alt="" onclick="openVideo9()" >
+                                <div class="desc-aside">
+                                    <h3>Death Note</h3>
+                                    <div class="rating">
+                                        <p> Rating: 8.6/10
+                                        </p>
+                                    </div>
+                                    <div class="desc-bottom">
+                                        <p>Episdoe : 1-37 End</p>
+                                        <p>Mangaka : Tsugumi Ohba </p>
+                                        <p>Relase on : 2006 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+                
+                <div class="content" >
+                    <div class="anime">
+                        <div class="luck">
+                        <h1>Anime list</h1>
+                    </div>
+                        <div class="wrapper" id="Anime_list">
+                            <div class="peace">
+                                <div class="anim">
+                                    <img src="one.png" height="180" width="120px" alt="" onclick="openVideo()" >
+                                    
+                                    <div class="desc">
+                                        <h3>One Piece</h3>
+                                        <div class="deskripsi">
+                                            <p>Monkey D. Luffy is a young man who was inspired by his childhood idol and
+                                                powerful pirate named Red Haired.
+                                            </p>
+                                        </div>
+                                        <p>Episdoe : 1-1013 On going</p>
+                                        <p>Mangaka : Eiichiro Oda </p>
+                                        <p>Relase on : 1999 </p>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                             
+                            <div class="peace">
+                                <div class="anim">
+                                    <img src="Naruto.jpeg" width="120px" alt="" onclick="openVideo2()">
+                                    <div class="desc">
+                                        <h3>Naruto Shippuden</h3>
+                                        <div class="deskripsi">
+                                            <p>Tells the story of the struggle of an orphaned boy named Naruto Uzumaki
+                                                who dreams of becoming a Hokage leader of the village.
+                                            </p>
+                                        </div>
+                                        <p>Episdoe : 1-500 End</p>
+                                        <p>Mangaka : Masashi Kisimoto</p>
+                                        <p>Relase on : 2007 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="peace">
+                                <div class="anim">
+                                    <img src="Jujutsuoo.jpeg" width="120px" alt=""  onclick="openVideo3()">
+                                    <div class="desc">
+                                        <h3>Jujutsu Kaisen</h3>
+                                        <div class="deskripsi">
+                                            <p>Jujutsu Kaisen tells the story of Yuji Itadori who becomes a high school
+                                                student because of an incident. On a whim doing basic paranormal
+                                                activities with the occult club.
+                                            </p>
+                                        </div>
+                                        <p>Episdoe : 1-24</p>
+                                        <p>Mangaka : Gege Akutami</p>
+                                        <p>Relase on : 2020 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peace">
+                                <div class="anim">
+                                    <img src="Dragonballoo.jpeg" width="120px" alt=""  onclick="openVideo4()">
+                                    <div class="desc">
+                                        <h3>Dragonball Super</h3>
+                                        <div class="deskripsi">
+                                            <p>Earth is at peace after the Tournament of Power. Realizing that the
+                                                universe still has many more powerful people to discover.
+                                            </p>
+                                        </div>
+                                        <p>Episdoe : 1-131 End</p>
+                                        <p>Mangaka : Akira Toriyama</p>
+                                        <p>Relase on : 2015 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="peace">
+                                <div class="anim">
+                                    <img src="Kimetsu.webp" width="120px" alt=""  onclick="openVideo5()">
+                                    <div class="desc">
+                                        <h3>Kimetsu No yaiba s1</h3>
+                                        <div class="deskripsi">
+                                            <p>Tanjiro Kamado is a kind and intelligent boy who lives with his family
+                                                and earns money by selling charcoal. Everything changed when his family
+                                                was attacked and slaughtered by a demon.
+                                            </p>
+                                        </div>
+                                        <p>Episdoe : 1-24</p>
+                                        <p>Mangaka : Koyoharu Gotōge</p>
+                                        <p>Relase on : 2019 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peace">
+                                <div class="anim">
+                                    <img src="aot.jpeg" width="120px" alt=""  onclick="openVideo6()">
+                                    <div class="desc">
+                                        <h3>ATTACK ON TITAN</h3>
+                                        <div class="deskripsi">
+                                            <p>Attack on Titan: The Final Season will continue the struggle of Eren and
+                                                the Reconnaissance Squad in eliminating the Titans.
+                                            </p>
+                                        </div>
+                                        <p>Episdoe : 1-16</p>
+                                        <p>Mangaka : Hajime Isayama</p>
+                                        <p>Relase on : 2021 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+               
+             <div class="head" >
+                <h1>Anime movie</h1>
+                
+            </div>
+
+            
+            <section id="Anime_movie">
+                <div class="product">
+                    <picture>
+                        <img src="thelast.jpeg"alt=""onclick="openVideo10()">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>The Last: Naruto Movie</b><br>
+                            <small>1 Hours 52 minute</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <picture>
+                        <img src="Dragonball.jpeg" alt=""onclick="openVideo11()">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Dragonball Super: Broly</b><br>
+                            <small>1 Hours 40 minute</small><br>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <picture>
+                        <img src="jujutsu.jpeg" alt=""onclick="openVideo12()">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Jujutsu Kaisen: 0</b><br>
+                            <small>1 Hours 45 minute</small>
+                        </p>
+                     
+                    </div>
+                </div>
+                <div class="product">
+                    <picture>
+                        <img src="kimetsu.jpeg" alt=""onclick="openVideo13()">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Kimetsu No Yaiba: Mugen train</b><br>
+                            <small>1 Hours 57 minute</small>
+                        </p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="product">
+                    <picture>
+                        <img src="gintama.jpeg" alt="" onclick="openVideo14()">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Gintama: Final</b><br>
+                            <small>1 Hours 44 minute</small>
+                        </p>
+                    </div>
+                   
+                </div>
+               <div class="product">
+                    <picture>
+                        <img src="tenki.jpeg" onclick="openVideo15()">
+                    </picture>
+                    <div class="detail">
+                        <p>
+                            <b>Weathering with You</b><br>
+                            <small>1 Hours 51 minute</small>
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+             </section>
+            
+        </div>
+        </div>
+       
+    </main>
+    
+<footer>
+    <div >
+        <h1 >Animesuge</h1>
+        
+        </div>
+</footer>
+    <script
+     src="/script.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+     
+   
+</body>
+</html>
